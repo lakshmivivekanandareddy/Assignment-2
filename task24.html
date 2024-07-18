@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function showDate(){
+            var s=new Date()
+            var s1=s.getDate()
+            var s2=s.toLocaleString('default',{month:'long'})
+            var s3=s.getFullYear()
+            var dt=s1+'/'+s2+'/'+s3
+            document.getElementById("date").innerHTML=dt;
+        }
+        function showTime(){
+            const d=new Date();
+            document.getElementById("time").innerHTML=d;}
+    </script>
+    <button onclick="showDate()">show date</button><br><br>
+    <span id="date"></span><br><br>
+    <button onclick="showTime()">show time</button><br>
+    <span id="time"></span>
+</body>
+</html>

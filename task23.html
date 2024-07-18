@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Multi(){
+            var a=document.getElementById("a").value
+            var b=document.getElementById("b").value
+            var c=parseInt(a)*parseInt(b)
+            document.getElementById("result").innerHTML=c
+        }
+        function Div(){
+            var a=document.getElementById("a").value
+            var b=document.getElementById("b").value
+            var c=parseInt(a)/parseInt(b)
+            document.getElementById("result").innerHTML=c
+        }
+        </script>
+    1st Number:<input id="a" /><br><br>
+    2nd Number:<input id="b"/><br><br>
+    <button onclick="Multi()">Multiply</button>
+    <button onclick="Div()">Divide</button><br><br>
+    The Result is: <p id="result"></p>
+</body>
+</html>
